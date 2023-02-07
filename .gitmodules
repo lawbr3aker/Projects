@@ -1,0 +1,6 @@
+[submodule "Python/EasyLang"]
+	path = Python/EasyLang
+	url = .\\Python\\EasyLang\\
+[submodule "Python/ColorRecognition"]
+	path = Python/ColorRecognition
+	url = .\\Python\\ColorRecognition\\
