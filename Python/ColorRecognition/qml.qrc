@@ -1,0 +1,54 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+    </qresource>
+    <qresource prefix="/Core/Components/Buttons">
+        <file alias="BaseButton.qml">core/components/buttons/BaseButton.qml</file>
+        <file alias="Button.qml">core/components/buttons/Button.qml</file>
+        <file alias="DropDownButton.qml">core/components/buttons/DropDownButton.qml</file>
+        <file alias="BaseRadioButton.qml">core/components/buttons/BaseRadioButton.qml</file>
+    </qresource>
+    <qresource prefix="/Core/Components/Layouts">
+        <file alias="BaseRow.qml">core/components/layouts/BaseRow.qml</file>
+    </qresource>
+    <qresource prefix="/Core/Components/Menus">
+        <file alias="BaseDropDown.qml">core/components/menus/BaseDropDown.qml</file>
+        <file alias="BaseMenuBar.qml">core/components/menus/BaseMenuBar.qml</file>
+        <file alias="DropDownInputs.qml">core/components/menus/DropDownInputs.qml</file>
+    </qresource>
+    <qresource prefix="/Core/Constants/States">
+        <file alias="OnHoverDarker.qml">core/constants/states/OnHoverDarker.qml</file>
+    </qresource>
+    <qresource prefix="/Core/Constants/Backgrounds">
+        <file alias="BaseRounded.qml">core/constants/backgrounds/BaseRounded.qml</file>
+        <file alias="OnlyBorder.qml">core/constants/backgrounds/OnlyBorder.qml</file>
+    </qresource>
+    <qresource prefix="/Core/Constants/Texts">
+        <file alias="MonoText.qml">core/constants/texts/MonoText.qml</file>
+        <file alias="BaseText.qml">core/constants/texts/BaseText.qml</file>
+        <file alias="Labeled.qml">core/constants/texts/Labeled.qml</file>
+    </qresource>
+    <qresource prefix="/Core/Constants/Types">
+        <file alias="Setting.qml">core/constants/types/Setting.qml</file>
+    </qresource>
+    <qresource prefix="/Core/Components/Inputs">
+        <file alias="BaseInput.qml">core/components/inputs/BaseInput.qml</file>
+        <file alias="LabeledInput.qml">core/components/inputs/LabeledInput.qml</file>
+        <file alias="BaseTextArea.qml">core/components/inputs/BaseTextArea.qml</file>
+        <file alias="LabeledTextArea.qml">core/components/inputs/LabeledTextArea.qml</file>
+    </qresource>
+    <qresource prefix="/Templates/Dialogs">
+        <file alias="CarInfoForm.qml">templates/dialogs/CarInfoForm.qml</file>
+        <file alias="Home.qml">templates/dialogs/Home.qml</file>
+        <file alias="ColorRecognitionHome.qml">templates/dialogs/ColorRecognitionHome.qml</file>
+        <file alias="HeavyColorRecognition.qml">templates/dialogs/HeavyColorRecognition.qml</file>
+        <file alias="SimpleColorRecognition.qml">templates/dialogs/SimpleColorRecognition.qml</file>
+        <file alias="Setting.qml">templates/dialogs/Setting.qml</file>
+    </qresource>
+    <qresource prefix="/Core/Constants/Fonts">
+        <file alias="MultipleFont.qml">core/constants/fonts/MultipleFont.qml</file>
+    </qresource>
+    <qresource prefix="/Core/Constants/Effects">
+        <file alias="Slider.qml">core/constants/effects/Slider.qml</file>
+    </qresource>
+</RCC>
