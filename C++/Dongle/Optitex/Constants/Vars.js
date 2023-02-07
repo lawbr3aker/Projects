@@ -1,0 +1,31 @@
+.pragma library
+
+const
+    MainWindowsWidth = 710,
+    MainWindowsDescSpacing = 15,
+    MainWindowsHeight = 500,
+    DescLeftSpace = 12,
+    MainWindowsTitleFontSize = 25,
+    MainWindowsDescFontSize = 17,
+    TopBannerTitleFontSize = 18,
+    TopBannerDescFontSize = 16,
+    TopBannerDescX = 12,
+    MainWindowsDescsTop = 50,
+    MainWindowsDescsLeft = 30,
+    WindowsHeight = 220,
+    WindowsWidth = 630,
+    EntriesWidth = 200,
+    MessageIconsSize = 50,
+    MessageWindowsWidth = 400,
+    MessageWindowContentHorizotalPadding = 10,
+    MessageWindowsHeight = 120,
+    PasswordErrorMessageWidth = 250,
+    PasswordErrorMessageFontSize = 15,
+    ButtonsHeight = 30,
+    ButtonsHorizontalPadding = 30,
+    ButtonsVerticalPadding = 5,
+    NavbarHorizontalInset = 15,
+    NavbarVerticalInset = 8,
+    MinimunButtonWidth = 100,
+    TopBannerHeight = 85
+

@@ -1,0 +1,62 @@
+; Copyright (c) 2004-2015. All rights reserved
+;
+; INF file for installing Aks3bus Optitex driver
+
+[Version]
+Signature="$WINDOWS NT$"
+
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+
+Provider=%MSFT%
+DriverVer=12/12/2013,1.0.0.0000
+CatalogFile=Optitex.cat
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[SourceDisksNames]
+1 = %DiskId1%,,,""
+
+[SourceDisksFiles]
+Optitex.sys  = 1,,
+
+[Manufacturer]
+%StdMfg%=Standard,NTx86, NTia64, NTamd64
+
+[Standard]
+%Optitex.DeviceDesc%=Optitex_Device, root\Optitex
+
+[Standard.NTx86]
+%Optitex.DeviceDesc%=Optitex_Device, root\Optitex
+
+[Standard.NTia64]
+%Optitex.DeviceDesc%=Optitex_Device, root\Optitex
+
+[Standard.NTamd64]
+%Optitex.DeviceDesc%=Optitex_Device, root\Optitex
+
+[Optitex_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+Optitex.sys
+
+[Optitex_Device.NT.Services]
+AddService = Optitex,%SPSVCINST_ASSOCSERVICE%, Optitex_Service_Inst
+
+[Optitex_Service_Inst]
+DisplayName    = %Optitex.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\Optitex.sys
+LoadOrderGroup = Extended Base
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+MSFT = "Aks3bus"
+StdMfg = "(Standard system devices)"
+DiskId1 = "Aks3bus Optitex Installation Disk #1"
+Optitex.DeviceDesc = "Aks3bus Optitex"
+Optitex.SVCDESC = "Aks3bus Optitex"

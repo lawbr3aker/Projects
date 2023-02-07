@@ -1,0 +1,62 @@
+; Copyright (c) 2004-2015. All rights reserved
+;
+; INF file for installing USB Mkbus driver
+
+[Version]
+Signature="$WINDOWS NT$"
+
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+
+Provider=%MSFT%
+DriverVer=12/12/2013,1.0.0.0000
+CatalogFile=Mkbus.cat
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[SourceDisksNames]
+1 = %DiskId1%,,,""
+
+[SourceDisksFiles]
+Mkbus.sys  = 1,,
+
+[Manufacturer]
+%StdMfg%=Standard,NTx86, NTia64, NTamd64
+
+[Standard]
+%Mkbus.DeviceDesc%=Mkbus_Device, root\Mkbus
+
+[Standard.NTx86]
+%Mkbus.DeviceDesc%=Mkbus_Device, root\Mkbus
+
+[Standard.NTia64]
+%Mkbus.DeviceDesc%=Mkbus_Device, root\Mkbus
+
+[Standard.NTamd64]
+%Mkbus.DeviceDesc%=Mkbus_Device, root\Mkbus
+
+[Mkbus_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+Mkbus.sys
+
+[Mkbus_Device.NT.Services]
+AddService = Mkbus,%SPSVCINST_ASSOCSERVICE%, Mkbus_Service_Inst
+
+[Mkbus_Service_Inst]
+DisplayName    = %Mkbus.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\Mkbus.sys
+LoadOrderGroup = Extended Base
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+MSFT = "Aks3bus"
+StdMfg = "(Standard system devices)"
+DiskId1 = "USB Mkbus Installation Disk #1"
+Mkbus.DeviceDesc = "USB Mkbus"
+Mkbus.SVCDESC = "USB Mkbus"
