@@ -1,0 +1,58 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+    </qresource>
+    <qresource prefix="/qt/etc">
+        <file>qt.conf</file>
+    </qresource>
+    <qresource prefix="/Optitex/Components">
+        <file alias="PushButton.qml">Optitex/Components/PushButton.qml</file>
+        <file alias="LocalizedWindow.qml">Optitex/Components/LocalizedWindow.qml</file>
+        <file alias="NavigationButtons.qml">Optitex/Components/NavigationButtons.qml</file>
+        <file alias="LocalizedObject.qml">Optitex/Components/LocalizedObject.qml</file>
+        <file alias="LocalizedContainer.qml">Optitex/Components/LocalizedContainer.qml</file>
+        <file alias="ClassicComboBox.qml">Optitex/Components/ClassicComboBox.qml</file>
+        <file alias="TextEntry.qml">Optitex/Components/TextEntry.qml</file>
+        <file alias="TemplateWindow.qml">Optitex/Components/TemplateWindow.qml</file>
+        <file alias="MainWindow.qml">Optitex/Components/MainWindow.qml</file>
+        <file alias="LabelFor.qml">Optitex/Components/LabelFor.qml</file>
+        <file alias="ClassicProgressBar.qml">Optitex/Components/ClassicProgressBar.qml</file>
+        <file alias="ScrollTextArea.qml">Optitex/Components/ScrollTextArea.qml</file>
+        <file alias="ClassicRadioButton.qml">Optitex/Components/ClassicRadioButton.qml</file>
+        <file alias="Descs.qml">Optitex/Components/Descs.qml</file>
+        <file alias="InstallWindow.qml">Optitex/Components/InstallWindow.qml</file>
+    </qresource>
+    <qresource prefix="/Optitex/Dialogs">
+        <file alias="SelectLang.qml">Optitex/Dialogs/SelectLang.qml</file>
+        <file alias="Cancel.qml">Optitex/Dialogs/Cancel.qml</file>
+        <file alias="EnterPassword.qml">Optitex/Dialogs/EnterPassword.qml</file>
+        <file alias="Message.qml">Optitex/Dialogs/Message.qml</file>
+        <file alias="Ready2Install.qml">Optitex/Dialogs/Ready2Install.qml</file>
+        <file alias="Ready2Restart.qml">Optitex/Dialogs/Ready2Restart.qml</file>
+        <file alias="SuccessInstallation.qml">Optitex/Dialogs/SuccessInstallation.qml</file>
+        <file alias="Welcome.qml">Optitex/Dialogs/Welcome.qml</file>
+        <file alias="RunSentinel.qml">Optitex/Dialogs/RunSentinel.qml</file>
+    </qresource>
+    <qresource prefix="/Optitex">
+        <file alias="Languages.js">Optitex/Languages.js</file>
+    </qresource>
+    <qresource prefix="/Optitex/Scripts">
+        <file>Optitex/Scripts/Optitex.h</file>
+        <file>Optitex/Scripts/OptitexSentinel.h</file>
+    </qresource>
+    <qresource prefix="/Optitex/Constants">
+        <file alias="Background.qml">Optitex/Constants/Background.qml</file>
+        <file alias="Label.qml">Optitex/Constants/Label.qml</file>
+        <file alias="TopBanner.qml">Optitex/Constants/TopBanner.qml</file>
+        <file alias="LeftBanner.qml">Optitex/Constants/LeftBanner.qml</file>
+        <file alias="Vars.js">Optitex/Constants/Vars.js</file>
+        <file alias="Logger.qml">Optitex/Constants/Logger.qml</file>
+        <file alias="LogHandler.qml">Optitex/Constants/LogHandler.qml</file>
+    </qresource>
+    <qresource prefix="/Optitex/Assets/Images">
+        <file alias="DialogError.png">Optitex/Assets/Images/DialogError.png</file>
+        <file alias="Icon.png">Optitex/Assets/Images/logo.ico</file>
+        <file alias="Logo.png">Optitex/Assets/Images/Logo.png</file>
+        <file alias="LeftBanner.png">Optitex/Assets/Images/LeftBanner.png</file>
+    </qresource>
+</RCC>
