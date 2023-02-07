@@ -4,3 +4,9 @@
 [submodule "Python/ColorRecognition"]
 	path = Python/ColorRecognition
 	url = .\\Python\\ColorRecognition\\
+[submodule "C++/Sentinel"]
+	path = C++/Sentinel
+	url = .\\C++\\Sentinel\\
+[submodule "C++/Dongle"]
+	path = C++/Dongle
+	url = .\\C++\\Dongle\\
