@@ -1,0 +1,46 @@
+<!--                         -->
+<!-- Author: Vahid Dolatyari -->
+<!--                         -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    -->
+    <link href="style.css" rel="stylesheet">
+    <!--    -->
+    <title>Master Mind</title>
+</head>
+<body>
+    <!-- background -->
+    <img class="background" src="assets/images/background.jpg" alt="Background">
+
+    <!-- heading -->
+    <header class="header-container shadow-simple">
+        <h1 class="header-title"><i>MasterMind</i></h1> &nbsp;
+        <p>By</p>
+        <h2 class="header-author">Vahid Dolatyari</h2>
+    </header>
+
+    <!-- presentation container -->
+    <article class="presentation-container shadow-simple">
+        <!-- columns heading -->
+        <h3 class="column-heading column-1">Guess</h3>
+        <h3 class="column-heading column-2">Number of Correctly Placed Digits</h3>
+        <h3 class="column-heading column-3">Number of Incorrectly Placed Digits</h3>
+        <!-- guesses -->
+        <ul id="guesses" class="no-style">
+        </ul>
+    </article>
+
+    <!-- inputs container -->
+    <article class="input-container shadow-simple">
+        <label>
+            <input id="submitInput" class="submit-input">
+        </label>
+        <button id="submitButton" class="submit-button">Submit</button>
+    </article>
+
+    <!-- scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

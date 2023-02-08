@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    -->
+    <link href="../style.css" rel="stylesheet">
+    <!--    -->
+    <title>Orders</title>
+    <!-- functions -->
+    <script>
+        function numberCheck(object) {
+            const new_value = parseInt(object.value)
+            //
+            if (object.value.length > 3 || !(0 <= new_value && new_value <= 999))
+                object.value = object.value.slice(0, 3)
+        }
+
+        function selectProduct(master_id, product) {
+            const master = document.querySelector('#' + master_id)
+            //
+            master.textContent = product.textContent
+        }
+
+
+        function orderConfirm() {
+            alert("Thank you very much for choosing our store")
+        }
+        function orderCancel() {
+            alert("Sorry we couldn't sell you anything")
+        }
+    </script>
+</head>
+<body>
+    <ul class="orders-container shadow-lime">
+        <li class="order">
+            <!-- title -->
+            <h1 class="order-title shadow-lime2">Mobile</h1>
+            <!-- products -->
+            <nav class="order-product-selected shadow-lime2">
+                <p class="order-product-name" id="mobile"></p>
+                <ul class="order-products">
+                    <li class="order-product" onclick="selectProduct('mobile', this)">iPhone X</li>
+                    <li class="order-product" onclick="selectProduct('mobile', this)">iPhone 6S Plus</li>
+                </ul>
+            </nav>
+            <!-- order price -->
+            <label>
+                <input class="order-count shadow-lime2" type="number" oninput="numberCheck(this)">
+            </label>
+        </li>
+        <li class="order">
+            <!-- title -->
+            <h1 class="order-title shadow-lime2">Laptop</h1>
+            <!-- products -->
+            <nav class="order-product-selected shadow-lime2">
+                <p class="order-product-name" id="laptop"></p>
+                <ul class="order-products">
+                    <li class="order-product" onclick="selectProduct('laptop', this)">Microsoft Surface</li>
+                    <li class="order-product" onclick="selectProduct('laptop', this)">Asus ROG</li>
+                </ul>
+            </nav>
+            <!-- order price -->
+            <label>
+                <input class="order-count shadow-lime2" type="number" oninput="numberCheck(this)">
+            </label>
+        </li>
+        <li class="order">
+            <!-- title -->
+            <h1 class="order-title shadow-lime2">Accessory</h1>
+            <!-- products -->
+            <nav class="order-product-selected shadow-lime2">
+                <p class="order-product-name" id="accessory"></p>
+                <ul class="order-products">
+                    <li class="order-product" onclick="selectProduct('accessory', this)">Earbud</li>
+                    <li class="order-product" onclick="selectProduct('accessory', this)">Phone case</li>
+                    <li class="order-product" onclick="selectProduct('accessory', this)">Laptop Bag</li>
+                </ul>
+            </nav>
+            <!-- order price -->
+            <label>
+                <input class="order-count shadow-lime2" type="number" oninput="numberCheck(this)">
+            </label>
+        </li>
+    </ul>
+
+    <!-- buttons -->
+    <nav class="order-buttons">
+        <a class="order-now shadow-lime2"    onclick="orderConfirm()">Order now</a>
+        <a class="order-cancel shadow-lime2" onclick="orderCancel()">Cancel</a>
+    </nav>
+</body>
+</html>

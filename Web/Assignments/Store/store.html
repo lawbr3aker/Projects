@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    -->
+    <link href="style.css" rel="stylesheet">
+    <!--    -->
+    <title>Store</title>
+    <!-- functions -->
+    <script>
+        function loadPage(page, height) {
+            const windowContainer = document.querySelector(".window-container")
+            //
+            windowContainer.src = page;
+            windowContainer.style.height = height + 'px'
+        }
+    </script>
+</head>
+<body>
+    <!-- top -->
+    <a id="header-link"></a>
+
+    <!-- header -->
+    <header class="header-container shadow-simple">
+        <h2 class="header-title"><i>Digital Store</i></h2>
+    </header>
+
+    <!-- pages navigation -->
+    <nav class="pages-navigation" id="asd">
+        <ul>
+            <li class="page-item"><a class="page-reference" onclick="loadPage('pages/home.html', 1050)">Home</a></li>
+            <li class="page-item"><a class="page-reference" onclick="loadPage('pages/mobiles.html', 800)">Mobiles</a></li>
+            <li class="page-item"><a class="page-reference" onclick="loadPage('pages/laptops.html', 950)">Laptops</a></li>
+            <li class="page-item"><a class="page-reference" onclick="loadPage('pages/accessories.html', 1050)">Accessories</a></li>
+            <li class="page-item"><a class="page-reference" onclick="loadPage('pages/orders.html')">Orders</a></li>
+        </ul>
+        <p class="pages-navigation-toggle">
+            Menu
+        </p>
+    </nav>
+
+    <!-- window container -->
+    <iframe class="window-container" src="pages/home.html" width="1000" height="1050">
+    </iframe>
+</body>
+</html>
