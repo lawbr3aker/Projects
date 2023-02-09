@@ -13,3 +13,6 @@
 [submodule "Web/Assignments"]
 	path = Web/Assignments
 	url = .\\Web\\Assignments\\
+[submodule "Python/Islands"]
+	path = Python/Islands
+	url = .\\Python\\Islands\\
