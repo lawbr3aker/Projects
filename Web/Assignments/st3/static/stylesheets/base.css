@@ -1,0 +1,632 @@
+* {
+  padding : 0;
+  margin  : 0;
+
+  user-select : none;
+
+  font-family : system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  cursor : pointer;
+
+  color           : #06c;
+  text-decoration : none;
+}
+
+ul li {
+  list-style : none;
+}
+
+img {
+  height : 100%;
+}
+
+label {
+  display        : flex;
+  flex-direction : column;
+
+  font-size : 0.9em;
+}
+
+label.fa {
+  float : right;
+}
+
+label input {
+  margin-top : 5px;
+}
+
+.flex {
+  display : flex;
+}
+
+.selectable {
+  user-select : text;
+}
+
+.column-grid {
+  display : inline-grid;
+}
+
+.fa {
+  direction : rtl;
+}
+
+.children-center {
+  width  : 100%;
+  height : 100%;
+  /* apply vertically center */
+  vertical-align : middle;
+  align-items    : center;
+  /* apply horizontally center */
+  text-align      : center;
+  justify-content : center;
+}
+
+.fill {
+  width  : 100%;
+  height : 100%;
+}
+
+.fill-center {
+  width  : 100%;
+  height : 100%;
+
+  vertical-align  : middle;
+  align-items     : center;
+  text-align      : center;
+  justify-content : center;
+}
+
+.card {
+  display : inline-flex;
+  width   : 100%;
+
+  direction : rtl;
+}
+
+.card > .icon {
+  height : 20px;
+
+  padding : 0 10px;
+}
+
+.information {
+  display : flex;
+  height  : 70px;
+  width   : 100%;
+
+  vertical-align : middle;
+  align-items    : center;
+}
+
+.information > .left {
+  position : absolute;
+  left     : 5vw;
+}
+
+.information > .right {
+  position : absolute;
+  right    : 5vw;
+}
+
+.information-cards {
+  grid-template-columns : auto auto;
+  grid-column-gap       : 10px;
+}
+
+.information-cards > .card {
+  display : flex;
+
+  align-items : center;
+}
+
+.information-card {
+  direction  : rtl;
+
+  font-size  : 12px;
+  text-align : right;
+}
+
+.navbar {
+  padding : 0 8vw;
+
+  direction      : rtl;
+  vertical-align : middle;
+
+  background-color : #18416A;
+}
+
+.navigation-list {
+  width  : 500px;
+  height : 35px;
+
+  grid-template-columns : repeat(5, auto);
+  grid-column-gap       : 10px;
+}
+
+.navigation {
+  display : flex;
+
+  vertical-align  : middle;
+  align-items     : center;
+  text-align      : center;
+  justify-content : center;
+}
+
+.navigation:hover {
+  background-color : #13304A;
+}
+
+.navigation > .text {
+  color      : white;
+  font-size  : 13px;
+  text-align : center;
+}
+
+.header-container {
+  grid-template-columns : auto auto;
+}
+
+.header {
+  display : flex;
+
+  vertical-align  : middle;
+  align-items     : center;
+}
+
+.header > .icon {
+  height : 30px;
+
+  padding : 0 10px;
+}
+
+.header > .title {
+  color     : #333333;
+  font-size : 20px;
+
+  text-wrap: none;
+}
+
+.part-cards > .card {
+  display : flex;
+
+  vertical-align  : middle;
+  align-items     : center;
+  justify-content : center;
+}
+
+.part-card {
+  width     : 100%;
+  max-width : 1700px;
+
+  padding : 40px 30px 70px;
+  margin  : 0 5%;
+}
+
+.part-card > .spacer {
+  margin : 30px 0 30px 0;
+
+  background-color : #DEDEE3;
+}
+
+.parallax-background {
+  background-attachment : fixed;
+  background-position   : center;
+  background-repeat     : no-repeat;
+  background-size       : cover;
+}
+
+.note {
+  font-size   : 1.5em;
+  font-weight :  bold;
+}
+
+.button {
+  padding : 7px 17px;
+
+  background-color : #646A6D;
+
+  color      : #FFFFFF;
+  text-align : center;
+
+  transition : background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color : #ADB6BA;
+
+  color : #262628;
+}
+
+.basic-input {
+  padding : 10px;
+
+  border : none;
+
+  font-size : 1.01em;
+}
+
+.have-icon {
+  display : inline-flex;
+
+  direction : rtl;
+}
+
+.have-icon > .icon {
+  padding : 0 10px;
+}
+
+.have-icon > .icon img {
+  width  : 25px;
+  height : 25px;
+}
+
+.spacer {
+  height : 1px;
+
+  border           : none;
+  background-color : #d2d2d7;
+}
+.root {
+  position  : absolute;
+  width     : 100%;
+  height    : 100%;
+}
+
+.company > .logo {
+  height  : 60px;
+}
+
+.trailer {
+  background-color : #DFDFDF;
+}
+
+.trailer img {
+  max-width : 1200px;
+}
+
+.services-cards {
+  grid-template-columns : repeat(4, minmax(0, 1fr));
+  grid-column-gap       : 2%;
+}
+
+.services-cards > .card {
+  height : 400px;
+}
+
+.service-card {
+  display        : flex;
+  flex-direction : column;
+  width          : 100%;
+  height         : calc(100% - 25px);
+  max-width      : 280px;
+  max-height     : 330px;
+
+  padding: 30px 10%;
+
+  background-color : white;
+
+  direction      : rtl;
+  vertical-align : middle;
+  align-items    : center;
+  text-align     : center;
+
+  transition : margin-top 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+.service-card:hover {
+  margin-top : 25px;
+
+  box-shadow : 0 0 10px 1px #DEDEDE;
+
+  cursor : pointer;
+}
+
+.service-card > .photo {
+  height : auto;
+
+  margin-bottom : 30px;
+}
+.service-card > .photo img {
+  width  : 100%;
+  height : auto;
+}
+
+.service-card > .text > .title {
+  font-weight : bold;
+  font-size   : 0.9em;
+}
+
+.service-card > .text > .description {
+  text-align:  right;
+
+  font-size : 0.8em;
+}
+
+.books-cards {
+  width : 80%;
+  grid-template-columns : repeat(3, minmax(0, 1fr));
+  grid-column-gap       : 20px;
+  grid-row-gap          : 20px;
+}
+
+.books-cards > .card {
+  width  : 100%;
+  height : 18vh;
+}
+
+.book-card {
+  width      : 100%;
+  height     : 100%;
+
+  direction : rtl;
+  overflow  : hidden;
+}
+
+.book-card:hover {
+  cursor : pointer;
+}
+
+.book-card > .content {
+  position   : relative;
+  width      : 100%;
+  height     : 100%;
+
+  opacity : 0;
+
+  overflow : hidden;
+
+  transition : margin-top 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.book-card > .content * {
+  user-select : text;
+}
+
+.book-card:hover > .content {
+  margin-top : -18vh;
+
+  opacity : 1;
+}
+
+.book-card > .content > .text {
+  height : calc(18vh - 15px * 2);
+
+  margin : 15px;
+
+  overflow-y : scroll;
+  overflow-x : hidden;
+
+  color      : white;
+  text-align : right;
+
+  background-color : #4F5452;
+}
+
+.book-card > .content > .text > .title {
+  padding : 1vh 20px 0;
+
+  font-size   : 1.5vh;
+  font-weight : bold;
+}
+
+.book-card > .content > .text > .description {
+  padding : 18px 18px;
+
+  font-size : 1vh;
+}
+
+.news-cards > .card {
+  height : 500px;
+}
+
+.new-card {
+  max-width : 300Px;
+  width     : 100%;
+  height    : 100%;
+
+  overflow   : hidden;
+  text-align : right;
+
+  background-color : #F4F6F8;
+
+  transition : box-shadow 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+
+.new-card:hover {
+  background-color : white;
+
+  box-shadow : 0 0 20px 2px #BEBEBE;
+
+  cursor : pointer;
+}
+
+.new-card > .photo {
+  height : 300px;
+
+  background-color : black;
+}
+
+.new-card > .photo img {
+  width : 100%;
+
+  transition : opacity 0.45s ease-in-out;
+}
+
+.new-card > .photo:hover img {
+  opacity: 0.4;
+}
+
+.new-card > .photo > .date {
+  z-index : 1;
+
+  position : absolute;
+  display  : flex;
+  width    : 60px;
+  height   : 70px;
+
+  margin-right: 20px;
+
+  align-items     : center;
+  justify-content : center;
+
+  background-color : #18406B;
+
+  color       : white;
+  font-size   : 17px;
+  font-weight : bold;
+
+  transition : background-color 0.3s ease-in-out;
+}
+
+.new-card > .photo:hover > .date {
+  background-color : #1CA45A;
+}
+
+.new-card > .text {
+  height : 100%;
+
+  padding : 0 25px 25px 25px;
+}
+
+.new-card > .text > .spacer {
+  margin : 0 0 20px;
+  width  : 20%;
+  height : 4px;
+
+  background-color : #1CA45A;
+
+  transition : width 0.2s ease-in-out;
+}
+
+.new-card > .text:hover > .spacer {
+  width : 100%;
+}
+
+.new-card > .text > .title {
+  color       : #6A6A6C;
+  font-size   : 1.2em;
+  font-weight : bold;
+}
+
+.new-card > .text > .description {
+  color       : #979799;
+  font-size   : 1em;
+}
+
+.about-us {
+  display        : flex;
+  flex-direction : column;
+  width          : 100%;
+  max-width      : 1400px;
+
+  padding : 60px 0;
+
+  color      : white;
+}
+
+.about-us > .title {
+  width : 65%;
+
+  text-align : right;
+}
+
+.about-us > .spacer {
+  width  : 70%;
+  height : 3px;
+
+  margin : 20px 0 10px;
+
+  background-color : #1AAF5D
+}
+
+.about-us > .more-title {
+  display : flex;
+  width   : 75%;
+
+  justify-content : right;
+
+  font-size  : 17px;
+  font-weight: bold;
+}
+
+.about-us > .description {
+  width      : 75%;
+  margin-top : 20px;
+
+  font-size  : 1.01em;
+  text-align : right;
+}
+
+.subscription {
+  display        : inline-flex;
+  flex-direction : column;
+  width          : 100%;
+}
+
+.subscription label {
+  width : 100%;
+}
+
+.subscription label ~ .button {
+  margin : 10px 0;
+}
+
+.subscription .button {
+  width : 100px;
+}
+
+.bottom-panel-container {
+  display : flex;
+
+  padding         : 4vh 5vw;
+  justify-content : center;
+}
+
+.bottom-panel {
+  display        : flex;
+  flex-direction : column;
+  max-width      : 1300px;
+
+  font-size : 16px;
+}
+
+.bottom-panel > .description {
+  width : 85%;
+
+  font-size   : 18px;
+  text-align  : right;
+}
+
+.bottom-panel > .spacer {
+  width  : 100%;
+  height : 4px;
+
+  margin: 3vh 0;
+
+  background-color : #1CA45A;
+}
+
+.bottom-panel .information-list {
+  width : 100%;
+
+  grid-template-columns : repeat(2, auto);
+  grid-column-gap       : 3%;
+}
+
+.bottom-panel .links {
+  width : 100%;
+
+  grid-template-columns : repeat(2, auto);
+  grid-column-gap       : 10%;
+
+  text-align : right;
+}
+
+.bottom-panel .links .links-list {
+  display : grid;
+
+  grid-row-gap : 10px;
+}
