@@ -10,6 +10,6 @@
 [submodule "C++/Dongle"]
 	path = C++/Dongle
 	url = .\\C++\\Dongle\\
-[submodule "Web/Assigments"]
-	path = Web/Assigments
-	url = .\\Web\\Assigments\\
+[submodule "Web/Assignments"]
+	path = Web/Assignments
+	url = .\\Web\\Assignments\\
